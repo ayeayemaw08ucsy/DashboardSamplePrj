@@ -89,7 +89,8 @@ function callLeftChart() {
 
   // 4. Retrieve the raw JSON data
   var jsonData = $.ajax({
-    url: 'http://localhost:8080/coreChart',
+   // url: 'http://localhost:8080/coreChart',
+    url:'https://myspringapp.herokuapp.com/coreChart',
     dataType: 'json',
   }).done(function (results) {
 	console.log(results);
